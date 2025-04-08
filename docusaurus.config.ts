@@ -28,7 +28,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh'],
   },
 
   presets: [
@@ -56,7 +56,7 @@ const config: Config = {
       logo: {
         alt: 'Future AI Hub Logo',
         src: 'img/future-ai-hub-logo.png',
-        href: 'https://www.404atom.online/',
+        href: '/',
       },
       items: [
         {
@@ -66,6 +66,10 @@ const config: Config = {
           label: 'Documentation',
         },
         {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
@@ -73,7 +77,6 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Docs',
